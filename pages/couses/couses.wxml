@@ -1,0 +1,30 @@
+<!--pages/couses.wxml-->
+<view class="page-body">
+  <view class="page-title">课程推荐</view>
+  <block wx:for="{{array}}" wx:key="item.title">
+    <view wx:if="{{item.level===1}}" class="artile-list level1">
+      <view class='pre-info'>
+        <view class="couse-title">{{item.title}} / {{item.coach}}</view>
+        <text class="couse-date">开班日期: {{item.date}}</text>
+      </view>
+    </view>
+    <view wx:elif="{{item.level===2}}" class="artile-list level2">
+      <view class='pre-info'>
+        <view class="couse-title">{{item.title}} / {{item.coach}}</view>
+        <text class="couse-date">开班日期: {{item.date}}</text>
+      </view>
+    </view>
+    <view wx:if="{{item.level===3}}" class="artile-list level3">
+      <view class='pre-info'>
+        <view class="couse-title">{{item.title}} / {{item.coach}}</view>
+        <text class="couse-date">开班日期: {{item.date}}</text>
+      </view>
+    </view>
+    <view wx:if="{{item.level===4}}" class="artile-list level4">
+      <view class='pre-info'>
+        <view class="couse-title">{{item.title}} / {{item.coach}}</view>
+        <text class="couse-date">开班日期: {{item.date}}</text>
+      </view>
+    </view>
+  </block>
+</view>

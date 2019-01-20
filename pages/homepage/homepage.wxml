@@ -1,0 +1,32 @@
+<view>
+  <view class="page-body">
+    <view class="swiper-container page-section">
+      <view class="blue-top"></view>
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" min-height="150" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="main">
+      <view class="article-1 weui-article page-section-center">
+        <h2 class="title">阳光校园，公益网球</h2>
+        <view class="para-section">
+          <text>
+          以“始于厚爱，成就梦想”为主题，威特锐公司于 2015 年推出了校园网球公益推广活动，为学生们提供网球启蒙教学，并针对校内优秀小球员提供更加专业的技术指导。目前，该活动已顺利在云南师范大学附属小学、昆明市第五中学、 昆明市第八中学等校开展，并取得了显著地效果。其中，昆八中网球队的小球员们更是在全国中学生网球比赛中取得了团体第三、女子单项第三的优异成绩。
+          </text>
+        </view>
+        <view class="para-section">
+          <text>
+          不同于传统式的技术培训，威特锐在专业教学之余，更注重网球文化气质的培养。通过在教学中融入各类网球时尚 元素，包括运动装备、网球服装、健身塑型、饮食健康、语 言文化等，真正提升青少年的网球运动素质及品味。 特此，威特锐公司邀您同行，寄予青少年们一份厚望，他们会成长为下一群优秀的网球推广人，加入产业的行军队伍！ 诚邀优秀运动品牌及个人赞助及合作，共同打造全新网球业态。
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="authen-button" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    授权登录
+  </button>
+</view>

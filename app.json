@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/usercenter/usercenter",
+    "pages/index/index",
+    "pages/couses/couses"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#587ba2",
+    "navigationBarTitleText": "Vport网球",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#9ad658",
+    "list": [
+      {
+        "selectedIconPath": "images/tennis_HL.png",
+        "iconPath": "images/tennis.png",
+        "pagePath": "pages/homepage/homepage",
+        "text": "主页"
+      },
+      {
+        "selectedIconPath": "images/课程_HL.png",
+        "pagePath": "pages/couses/couses",
+        "text": "课程",
+        "iconPath": "images/课程.png"
+      },
+      {
+        "selectedIconPath": "images/talk_HL.png",
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "vTalk",
+        "iconPath": "images/talk.png"
+      },
+      {
+        "selectedIconPath": "images/user_HL.png",
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "我的",
+        "iconPath": "images/user.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}
