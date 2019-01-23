@@ -17,7 +17,7 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px #efefef;
   padding: 20px;
-  margin-top: 13px;
+  margin-top: 7px;
   height: 120rpx;
   position: relative;
   background-color: #fff;

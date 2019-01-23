@@ -14,7 +14,16 @@ Page({
     interval: 2000,
     duration: 500,
     previousMargin: 0,
-    nextMargin: 0
+    nextMargin: 0,
+    latitude: 25.0366269,
+    longitude: 102.6852988,
+    enableScroll: false,
+    markers: [{
+      id: 1,
+      latitude: 25.0366269,
+      longitude: 102.6852988,
+      name: '威特锐体育网球俱乐部'
+    }]
   },
   changeProperty: function(e) {
     var propertyName = e.currentTarget.dataset.propertyName

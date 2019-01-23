@@ -1,7 +1,32 @@
 <!-- pages/usercenter/usercenter.wxml -->
-<view class="user-info">
-  <view class="user-avatar">
+<view class="my-container">
+  <!-- <view class="user-avatar">
     <open-data type="userAvatarUrl"></open-data>
   </view>
-  <open-data type="userNickName"></open-data>
+  <open-data type="userNickName"></open-data> -->
+  
+  <view wx:if="{{isLogin === true}}" class="user-info-top">
+  
+  </view>
+  <view wx:else class="user-info-top">
+    <view class="text-section">
+      <view class="large-font">未登录</view>
+      <view class="small-font">点击登录Vport网球俱乐部</view>
+    </view>
+    <image 
+    src='./../../images/user-logo.png'
+    style="width:100px; height: 70px; margin-top: -5px"
+    ></image>
+  </view>
+
+  <view class="main">
+  <view class="nav bc_white">
+    <view class="{{selected?'red':'default'}}" bindtap="selected">数据分析</view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">我的课程</view>
+    <view class="{{selected2?'red':'default'}}" bindtap="selected2">我的帖子</view>
+  </view>
+  <view class="{{selected?'show':'hidden'}}">for data</view>
+  <view class="{{selected1?'show':'hidden'}}">for course</view>
+  <view class="{{selected2?'show':'hidden'}}">for vTalk</view>
+  </view>
 </view>

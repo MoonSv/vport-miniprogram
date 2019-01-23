@@ -14,7 +14,7 @@ page {
   top: 0;
   width: 100%;
   height: 230rpx;
-  background-color: #4f7ba6;
+  background-color: #587ba2;
   /* border: 1px solid red; */
 }
 .swiper-container{
@@ -31,9 +31,6 @@ page {
 .slide-image{
   min-height: 200px;
   min-width: 700rpx
-}
-.article-1{
-  
 }
 .title{
   color: #193550;
@@ -156,4 +153,7 @@ button:last-child{
   z-index: 1;
   top: 0;
   opacity: 0;
+}
+.map-container{
+  padding:0 15px;
 }
